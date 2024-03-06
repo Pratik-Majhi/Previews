@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="demo"></p>
+    <p id="demo1">If you use the var it redeclare same block. But let cannot redeclare same block. </p>
+    <p id="demo2"></p>
+    <script>
+    // {
+    //    let x=5;y=10;
+
+    //    let z=5;}
+    
+    //     document.getElementById("demo").innerHTML=y+5;
+    //      document.getElementById("demo1").innerHTML=z; 
+    {
+    x=5;y=100;
+    // var can use declare after the value.but let cannot declare before the value
+    var z=x+y;}
+    //same variable onle be used this form otherwise take error
+    // var x=10;
+    // ++x;
+    x+=y;
+  let age= x<16? "to vote" : "not";
+     
+    document.getElementById("demo").innerHTML=z;
+    document.getElementById("demo1").innerHTML=x;
+    document.getElementById("demo2").innerHTML=x**2;//you can use this also Math.pow(x,2);
+    document.getElementById("demo2").innerHTML= age;
+    document.getElementById("demo2").innerHTML='single "quotes" of inside can work double quotes';
+
+
+    </script>
+    
+</body>
+</html>

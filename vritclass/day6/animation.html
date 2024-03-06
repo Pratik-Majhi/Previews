@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 400px;
+            position: relative;
+            background-color: blue;
+        }
+        .container .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color:yellow;
+            animation-name: moveTheBox;
+            animation-duration: 2s;
+            animation-duration: ease;
+            animation-iteration-count: infinite;           
+        }
+        @keyframes moveTheBox {
+            from{
+                left:0;
+                top:0;
+                border-radius: 50%;
+               
+            }
+            to{
+                left: 100%;
+                top: 0;
+                transform: rotate(360%);
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class=container>
+        <div class="box"></div> </div>
+    
+</body>
+</html>

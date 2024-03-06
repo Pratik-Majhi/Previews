@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-decoration:underline;
+            color:blanchedalmond;
+            background-color: rgb(37, 53, 53);
+            font: size 150px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Hello <span id="texttoChange">world</span></h1>
+    <button id="btn">Change</button>
+    <h2 style="color:red">welcome</h2>
+    <a href="https://google.com">
+    <button>Click</button></a>
+    <script>
+        alert=("this website is loaded.");
+        let title=document.getElementById("texttoChange");
+        let btn=document.getElementById('btn');
+        btn.addEventListener("click",function(){
+            title.innerText="everyone";
+        })
+
+    </script>
+</body>
+</html>

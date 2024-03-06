@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+    var fruits=["apple","mango","banana","litchi","orange"];
+    document.getElementById("demo").innerHTML=fruits.sort();
+    document.getElementById("demo").innerHTML=fruits.reverse();
+    document.getElementById("demo1").innerHTML=fruits.push("kiwi");
+    document.getElementById("demo1").innerHTML=fruits;
+    fruits.pop("orange");
+    console.log(fruits);
+    fruits.copyWithin(2,0,2);
+    console.log(fruits);
+    fruits.splice(2,2,"grapes");
+    console.log(fruits);
+    var car=["toyta","bmw","tata","honda","mercedenes","splender"]
+    
+    document.getElementById("demo2").innerHTML=car.slice(2,3);
+    // first argument of slice removed and second count to add
+
+</script>
+</body>
+</html>

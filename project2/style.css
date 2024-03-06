@@ -1,0 +1,390 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap');
+ 
+  
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+header{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+    
+    align-items: center;
+}
+.menu nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+a:link{
+    text-decoration: none;
+}
+ .dis a{
+    color:#0F32B1;
+}
+ .pm{
+    width: 100px;
+    border: none;
+height: 48px;
+border-radius: 100px;
+background-color:#0F32B1;
+color: #FFFFFF;
+}
+.am{
+    width: 198px;
+height: 48px;
+
+border-radius: 100px;
+border: 1px solid#FF785A;
+color: #FF785A;
+ background-color: #FFFFFF;
+}
+:hover button{
+    cursor: pointer;
+}
+ .img{
+   
+    position: relative;
+   
+ }
+.img .prap{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+   top: 0%;
+   bottom: 0%;
+   text-align: center;
+   width: 100%;
+}
+
+.prap{
+   color: #FFFFFF;
+   padding: 140px 50px;
+  
+}
+h1{
+    font-size: 32px;
+}
+p{
+    font-size: 16px;
+    font-family:  Noto Sans; 
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+  
+}
+
+.mainhero{
+    width: 1216px;
+    height: 184px;  
+     border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #000;
+    transform: translateY(-50%);
+    
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 70px;
+    
+}
+  
+.subhero{
+        padding: 24px;   
+        } 
+.hero input{
+width: 1016px;
+height: 56px;
+
+border-radius: 100px;
+
+border: 1px solid #D1D3DC;
+
+}
+
+ .sea{
+    background-color: #0F32B1;
+    width: 131px;
+height: 56px;
+border-radius: 100px;
+box-shadow: 0px 0px 16px 0px #98ACF640;
+border: none;
+color: #FFFFFF;
+}
+ .country{
+color: black;
+display: flex;
+justify-content: space-between;
+padding: 20px 0;
+}
+#desh{   
+padding: 12px 12px;
+border-radius: 8px;
+
+border: 1px solid #D1D3DC
+}
+
+    
+ #courses{   
+     padding: 12px 12px;
+        border-radius: 8px;
+        
+        border: 1px solid #D1D3DC
+        }
+#degree{   
+      padding: 12px 12px;
+      border-radius: 8px;
+            
+      border: 1px solid #D1D3DC
+            }
+#duration{   
+      padding: 12px 12px;
+     border-radius: 8px;
+     border: 1px solid #D1D3DC
+                }
+                
+ #Fees{   
+       padding: 12px 12px;
+       border-radius: 8px;
+      border: 1px solid #D1D3DC
+                }
+
+#intake{   
+        padding: 12px 12px;
+        border-radius: 8px;
+         border: 1px solid #D1D3DC
+       }
+.result-show-box{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #fff;
+ margin-inline: 70px;
+    }
+    #fee-box{
+       padding:  8px 0px 8px 0px;
+        border-radius: 8px;
+       border: 1px solid #D1D3DC;
+       color: #2C2F3A;
+       gap: 8px;
+font-family: Noto Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+
+
+
+    }
+    .divCointainer{
+        column-gap: 4px
+    } 
+    .showup{
+        color: #60677F;
+      
+font-family: Noto Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+
+    }
+    .childbox{
+        width: 384px;
+height: 284px;
+padding: 16px  16px;
+border-radius: 12px;
+border: 1px;
+border: 1px solid #D1D3DC;
+box-shadow: 0px 2px 12px 0px #B0B8D34D;
+
+    }
+   
+   .sub{
+    display: flex;
+    gap: 10px 20px;
+    
+   }
+   span{
+    display: flex;
+   }
+   .year{
+    display: flex;
+    gap: 32px;
+   }
+   .courseName{
+   padding: 30px 0px;
+   gap: 2px;
+
+   }
+   .love{
+    width: 24px;
+height: 24px;
+   }
+   .firstbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-inline: 70px;
+    padding: 30px 0px;
+   }
+   .Secondbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-inline: 70px;
+    
+   }
+   .Thirdbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-inline: 70px;
+    padding: 30px 0px;
+   }
+   .Fourthbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-inline: 70px;
+   }
+   .page{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    margin-inline: 70px;
+    align-items: center;
+   } 
+   .prev{
+    display: flex; 
+    gap: 24px;
+   }
+   .one{
+    width: 32px;
+height: 32px;
+border-radius: 100px;
+background: #0F32B1;
+text-align: center;
+color: #FFFFFF;
+   }
+   .next{
+   color: #0F32B1;
+
+   }
+   .feet{
+   
+    height: 392px;
+    
+    background: #061447;
+   }
+   
+   footer{
+    color: #fff;
+    width: 100%;
+    height: 392px;
+    background-color: #061447;
+}
+.footer-content{
+    margin:0 72px;
+    padding: 60px 0 30px 0;
+}
+.footer-content-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    flex: 0.7;
+}
+.links{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-links{
+    flex: 1.3;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    text-align: start;
+}
+.footer-tex{
+    /* padding: 10px 0; */
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer-text-{
+    padding: 30px 0;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+    line-height: 24px;
+}
+.footer-text{
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bx1{
+height: 24px;
+width: 24px;
+color: #fff;
+}
+.footer-content-{
+margin:0 72px;
+padding: 40px 0 30px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.social-media a{
+padding:0 15px ;
+
+}
+
+    /* hr {
+        display: block;
+        unicode-bidi: isolate;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+    } */
+   h6{
+    
+font-family: Noto Sans;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+
+
+   }
+   span{
+   
+font-family: Noto Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+color: #60677F;
+
+
+   }
+ 

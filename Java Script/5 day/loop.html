@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <input id="age" value="18"/>
+    <button onclick="myFun()">Submit</button>
+    <script>
+       let car=["bmw","toyta","mercedes"];
+        let text="";
+       var currentDate=new Date();
+       var comparisonDate = new Date(2025,3,28);
+        for(i=0;i<car.length;i++){
+            text+=car[i]+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+        if( currentDate<comparisonDate){
+            console.log("The current date is before february 24,2024.");
+           
+        }
+        else if (currentDate > comparisonDate) {
+    console.log("The current date is after February 24, 2024.");
+} else {
+    console.log("The current date is February 24, 2024.");
+}
+// var age=16;
+// var num=(age<=18)?"not voted":"voted";
+// document.getElementById("demo1").innerHTML=num;
+function myFun(){
+    let votable;
+    let age=Number(document.getElementById("age").value);
+    if(isNaN(age)){
+        voteable="input is not a number";
+        
+    }
+    else{
+        voteable=(age<18)?"not voteable":"voteable";
+    }
+    document.getElementById("demo1").innerHTML=voteable+"to vote";
+}
+
+    </script>
+</body>
+</html>

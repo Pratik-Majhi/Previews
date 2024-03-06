@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+   
+     let str="A childrens of the childrens today childrens"
+    document.getElementById("demo").innerHTML=str.indexOf("childrens");
+     document.getElementById("demo").innerHTML=str.indexOf("childrens",11);
+     document.getElementById("demo").innerHTML=str.lastIndexOf("childrens");
+    let string="Childrens are the pillars of the nation.A pillars is the nation of the children";
+    let pattern=string.search("are");
+    let reg=string.match(/Childrens/gi);
+    document.getElementById("demo").innerHTML=pattern;
+    document.getElementById("demo").innerHTML=reg;
+    
+    let num = /[0-9]+/g;
+let numbers = "There are 123 apples and 456 oranges.";
+
+console.log(numbers.match(num)); // Output: ["123", "456"]
+
+</script>   
+</body>
+</html>

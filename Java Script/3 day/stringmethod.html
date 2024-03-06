@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="myFun()">Try</button>
+    <script>
+       let text="Hello World";
+       let _text="Hi good morning top of the world";
+       let text1="!";
+       document.getElementById("demo").innerHTML=text.length;
+       console.log(text.charAt(0));
+    //    it identify the character of string 
+        console.log(text[1]);
+       let animals="cow, dog,elephant"
+    //    it removes the string of first count numbers and ending part
+        document.getElementById("demo").innerHTML=animals.slice(5,8);
+    //    document.getElementById("demo").innerHTML=animals.substr(5,3);
+    //    it removes the string of first count numbers and then start current situation
+    function myFun(){
+        document.getElementById("demo").innerHTML=animals.toUpperCase();
+    }
+    document.getElementById("demo1").innerHTML=text.concat(_text,text1);
+    var str="       hello world      ";
+    console.log(str.trim());
+   
+    
+    var str = "HELLO";
+var paddedStr = str.padStart(10, "123");
+console.log(paddedStr); // Output: "12312hello"
+console.log(str.repeat(3));
+console.log(str.replace("HELLO","Namaste"));
+var str = "apple,banana,orange";
+var fruits = str.split(","); // Splitting the string at each comma
+console.log(fruits); // Output: ["apple", "banana", "orange"]
+// document.getElementById("demo1").innerHTML=fruits;
+
+    </script>
+</body>
+</html>

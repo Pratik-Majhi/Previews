@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="message"></p>
+    <script>// Function to fetch data from the API
+        function fetchData() {
+          return new Promise((resolve, reject) => {
+            // Simulating an asynchronous API call with setTimeout
+            setTimeout(() => {
+              const data = { message: "Hello, world!" };
+              resolve(data);
+            }, 1000); // Simulate a delay of 1 second
+          });
+        }
+        
+        // Function to display data on the webpage
+        function displayData(data) {
+          const messageElement = document.getElementById("message");
+          messageElement.innerText = data.message;
+        }
+        
+        // Function to handle errors
+        function handleError(error) {
+          console.error("An error occurred:", error);
+        }
+        
+        // Function to initiate the fetching and displaying process
+        async function fetchDataAndDisplay() {
+          try {
+            const data = await fetchData(); // Fetch data asynchronously
+            displayData(data); // Display the fetched data
+          } catch (error) {
+            handleError(error); // Handle any errors that occur during fetching or displaying
+          }
+        }
+        
+        // Call the fetchDataAndDisplay function when the page loads
+        document.addEventListener("DOMContentLoaded", fetchDataAndDisplay);
+        </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <button id="display">Submit</button>
+    <script>
+   var animal=["cat","dog","rat","horse"];
+document.getElementById("demo").innerHTML=animal.join("+");
+document.getElementById("demo1").innerHTML=animal[0];
+// var text=""
+// for(i=0;i<animal.length;i++){
+//     text+=(i+1)+"."+animal[i]+"<br>";
+   
+// }
+
+
+ function myFun(){
+    var text="";
+    for (var i=0;i<animal.length;i++){
+        text+=(i+1)+"."+animal[i]+"<br>";
+    }
+    return text;
+}
+
+document.getElementById("display").addEventListener("click",function(){
+    document.getElementById("demo2").innerHTML=myFun();
+});
+// while using the logic inside function at that time to display the event
+ 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo">This my templates.</p>
+    <p id ="demo1">This my templates.</p>
+    <p id ="demo2">This my templates.</p>
+    <button ondblclick="templates()">Submit</button>
+    <script>
+        function templates(){
+            document.getElementById("demo").innerHTML=`This's is my change "template's"`;
+            document.getElementById("demo1").innerHTML=parseInt(" 24 year's");
+        //    parseInt convert string to the number
+        var firstName="PM";
+        var LastName="MP";
+        document.getElementById("demo2").innerHTML=`this is my name ${firstName}<br>${LastName}`;
+            
+
+        }
+    </script>
+    
+</body>
+</html>
